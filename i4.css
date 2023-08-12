@@ -1,0 +1,63 @@
+html{
+    background-color: rgb(0, 0, 0);
+    /* background-image: url('cat.gif'); */
+    background-size: 10rem;
+    background-position: center;
+}
+
+/* eff */
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+  }
+
+@keyframes slide-diagonal {
+    0% { transform: translate(0, 0); opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% { transform: translate(110rem ,0px);opacity: 0; }
+}
+/* thẻ */
+
+    .tab{
+    width: 100px;
+    height: 100px;
+    
+    animation-name: slide-diagonal;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; /*Chạy vô hạn */
+    background-repeat: repeat;
+  }
+
+
+
+
+  
+#photo-text{
+    margin-top: 100px;
+    margin-left: 100px ;
+    margin-right: auto;
+    width: 500px;
+}
+
+h1 {
+
+    font-size: 2rem;
+    font-weight: 90; /*độ đậm */
+    font-family: 'RobotoSlab-Bold'; /* loại font */
+    animation: rainbow 5s linear infinite;
+
+}
+
+#contac{
+    margin-top: 100px;
+}
+#call, #fb, #ig, #email{
+    margin-top: 10px;
+} 
